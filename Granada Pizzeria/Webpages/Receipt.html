@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada Receipt Page</title>
+    <link href="Receipt.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <center>
+        <div class = "receipt">
+        <h1>Thank you for buying Granada's Pizza.</h1>
+        <h1>The information you enter was forwarded to our rider.</h1>
+        <h1 style = "margin-top: -2%;">Please prepare &nbsp<peso>&#8369</peso><input class = "total" id="total"></input> </h1>
+        <h1>Our rider will be arriving soon. ETA: 30 minutes.</h1>
+        <h1>We hope you order again soon.</h1>
+
+        <form action = "../index.html"> 
+            <input type="submit" id = "submit" value = "Back to Home">
+        </form>
+        </div>
+    </center>
+
+
+    <script>
+        (function (pass_var) 
+        {document.getElementById("total").value = pass_var.localStorage.getItem("amount_total");}(window));
+    </script>
+</body>
+</html>

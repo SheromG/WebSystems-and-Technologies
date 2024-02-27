@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada Check Out Page</title>
+    <link href="CheckOut.css" rel="stylesheet" type="text/css">
+ 
+</head>
+<body>
+    <div class="row">
+        <ul class="main-nav">
+        <li><a href="../index.html">HOME</a></li>
+        <li  class=active><a href="CheckOut.html">CHECKOUT</a></li>
+    </ul>
+    </div>
+
+    <center>
+    <div class = "billout">
+    <h1>The total Amount to pay is:</h1>
+    <peso>&#8369</peso>
+    <input class = "total" id="total"></input>
+    <h1 style = "margin-top:-3%"> Please fill the information needed for the delivery</h1>
+    <form action = "Receipt.html"> 
+        <label for="name">Customer's Name: <input type="text" id="name" name="name" value=""></input></label><br>
+        <label for="contact">Contact Number: <input type="text" id="name" name="contact" value=""></input></label><br>
+        <label for="adress">Delivery Adress: <input name="adress" id = "name" rows="1" cols="30"></input></label><br>
+        <input type="submit" id = "submit" value = "Check-out">
+    </form>
+    </div>
+    </center>
+
+
+    <script>
+        (function (pass_var) 
+        {document.getElementById("total").value = pass_var.localStorage.getItem("amount_total");}(window));
+    </script>
+
+</body>
+</html>

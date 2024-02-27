@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+:root
+{
+    --color1: #db0001;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+    background-color: black;
+    color: white;
+}
+
+.header 
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../Media/Thumbnails/imax.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo 
+{
+    width: 10em;
+    cursor: pointer;
+}
+
+.title h1
+{
+    margin-top: 2.5%;
+    text-align: center;
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+.title h2
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    opacity: 0.85;
+}
+.title p
+{
+    margin-bottom: 10px;
+    width: 70%;
+    line-height: 50px;
+    opacity: 0.75;
+    margin-left: 15%;
+    text-align: justify;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+.number
+{
+    width: 30%;
+    flex-direction: column;
+}
+
+.number h3
+{
+    text-align: center;
+    font-size: 2rem;
+}
+.number div
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.number div input
+{
+    height: 4rem;
+    background-color: transparent;
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid white;
+    color:white;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
+#add, #subtract
+{
+    margin: 0px 10px;
+    padding: 15px 15px;
+    font-size: 2rem;
+    height: 4rem;
+}
+
+.number div #time
+{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 12.5px 25px;
+    appearance: none;
+}
+button 
+{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 20px;
+    height: 2.5em;
+}
+#button
+{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.45rem;
+    cursor: pointer;
+    padding: 5px 60px;
+    height: 2.5em;
+    margin-top: 2%;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.footer 
+{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.copyright-text {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .logo 
+    {
+        width: 100px;
+    }
+
+    nav button 
+    {
+        padding: 5px 10px;
+    }
+
+    nav .language 
+    {
+        padding: 4px 8px;
+    }
+
+    .title
+    {
+        position: unset;
+        transform: none;
+        padding-top: 30px;
+    }
+
+    .title h1 
+    {
+        font-size: 1.6rem;
+        width: 100%;
+        line-height: 30px;
+    }
+    .title h2
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .title p
+    {
+        margin-bottom: 10px;
+        width: 100%;
+        line-height: 50px;
+        opacity: 0.75;
+        margin-left: 0%;
+        text-align: justify;
+    }
+    .container
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .number
+    {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 1rem;
+    }
+    .number h3
+    {
+        font-size: 1.2rem;
+    }
+    #add, #subtract
+    {
+        margin: 0px 10px;
+        padding: 5px 5px;
+        font-size: 1.5rem;
+        height: 3rem;
+    }
+    .number div input
+    {
+        height: 3rem;
+        border-bottom: 3px solid white;
+        font-size: 1.5rem;
+        width: 50%;
+    }
+
+    #button
+    {
+        font-size: 1.45rem;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .footer
+    {
+        margin-top: 150px;
+    }
+}

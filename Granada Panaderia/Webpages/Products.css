@@ -1,0 +1,145 @@
+.page
+{
+    font-size: 50px;
+    padding:1px;
+    text-align:center;
+    color:tan;
+    font-family:"Courier New" ;
+    margin-bottom: -5%;
+}
+.card
+{
+    margin-top: -70px;
+    border-radius: 30px;
+    border: 2.5px solid #ffffff;
+    width:48%;
+    height:200px;
+    background:rgba(210, 180, 140, 0.75);
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.card img
+{
+    filter: drop-shadow(7px 7px 7px #ffffffad);
+    width:35%;
+}
+.card h2
+{
+    margin-top: -200px;
+    font-size: 275%;
+    color:white;
+    margin-left:250px;
+}
+.card h3
+{
+    margin-top: -40px;
+    font-size: 150%;
+    color:white;
+    margin-left:250px;
+}
+.bleft
+{
+    background-color: transparent;
+    border-radius: 10px;
+    color:white;
+    margin-left: 500px;
+    margin-top: -125px;
+    position:absolute;
+    font-size: 40px;
+    border: 2px solid #ffffff;
+}
+.bleft:hover
+{
+    background-color: white;
+    color:black;
+}
+.bleft:active 
+{
+    transform: translateY(4px);
+}
+.bright
+{
+    background-color: transparent;
+    border-radius: 10px;
+    color:white;
+    padding-left: 11.5px;
+    padding-right: 11.5px;
+    margin-left: 630px;
+    margin-top: -125px;
+    position:absolute;
+    font-size: 40px;
+    border: 2px solid #ffffff;
+}
+.bright:hover
+{
+    background-color: white;
+    color:black;
+}
+.bright:active 
+{
+    transform: translateY(4px);
+}
+.count
+{
+    color:white;
+    background-color: transparent;
+    border: transparent;
+    font-size: 60px;
+    position:absolute;
+    margin-left: 545px;
+    margin-top: -135px;
+    width: 5%;
+    text-align: center;
+}
+.rectangle
+{
+    left: 30%;
+    right: 30%;
+    width:40%;
+    top: 90%;
+    height:10%;
+    background-color:burlywood;
+    position: fixed;
+}
+.rectangle h2
+{
+    float:left;
+    color: white;
+    font-family:"Courier New" ;
+    padding-left: 2%;
+    font-size: 170%;
+}
+.check
+{
+    font-family:"Courier New" ;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    float: right;
+    margin-top: 4%;
+    margin-right: 2%;
+    width: 25%;
+    border: 2px solid #ffffff;
+}
+.check:hover
+{
+    background-color: white;
+    color:black;
+}
+.check:active 
+{
+    transform: translateY(4px);
+}
+.price
+{
+    text-align: center;
+    font-size: 40px;
+    background-color: transparent;
+    color:white;
+    border: none;
+    font-family:"Courier New" ;
+    width: 20%;
+    margin-top: 2%;
+    margin-left: 2%;
+}

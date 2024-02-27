@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+:root
+{
+    --color1: #db0001;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+    background-color: black;
+    color: white;
+}
+
+.header 
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Media/Thumbnails/imax.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo 
+{
+    width: 10em;
+    cursor: pointer;
+}
+
+.language 
+{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+
+.language-option
+{
+    background-color: transparent;
+    color:white;
+    border: none;
+}
+
+option:not(:checked)
+{
+    color: black;
+}
+
+
+.title
+{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+}
+
+.title h1 
+{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.title h3 
+{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.title p
+{
+    margin-bottom: 10px;
+
+}
+button 
+{
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 20px;
+    height: 2.5em;
+}
+
+.list
+{
+    padding: 2% 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list #movie
+{
+    border-radius: 4px;
+    height: 15rem;
+    width: 22em;
+    border: 2px solid white;
+    margin: 1.5% 1%;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.moviedetails
+{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.moviename
+{
+    font-size: 0.95rem;
+    font-weight: 900;
+}
+
+.moviedescription
+{
+    font-size: 0.85rem;
+    text-align: justify;
+    opacity: 0.5;
+}
+
+.moviebook
+{
+    background-color: transparent;
+    text-decoration: 2px underline;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0px 0px;
+    opacity: 0.78;
+}
+
+.footer 
+{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.copyright-text {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .logo 
+    {
+        width: 100px;
+    }
+
+    nav button 
+    {
+        padding: 5px 10px;
+    }
+
+    nav .language 
+    {
+        padding: 4px 8px;
+    }
+
+    .title
+    {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .title h1 
+    {
+        font-size: 30px;
+    }
+    .moviename
+    {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+}

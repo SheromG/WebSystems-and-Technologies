@@ -1,0 +1,103 @@
+body
+{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(../Media/bg.jpg);  
+    background-position: center;  
+    background-size:cover; 
+    height:100vmin;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.billout
+{
+    left: 15%;
+    right: 15%;
+    width:70%;
+    top: 10%;
+    height:90%;
+    background-color: rgba(222, 184, 135, 0.7750);
+    padding-bottom: 2%;
+}
+.billout h1
+{
+    padding-top: 2.5%;
+    color: white;
+    font-family: 'Ink free';
+}
+.billout peso
+{
+    color: white;
+    font-family: 'Ink free';
+    font-size: 500%;
+    padding-right: 5%;
+}
+.total
+{
+    text-align: center;
+    font-size: 600%;
+    background-color: transparent;
+    color:white;
+    border: none;
+    font-family: 'Ink free';
+    width: 30%;
+    margin-top: -2%;
+    margin-left: -5%;
+}
+.billout label
+{
+    color: white;
+    font-family: 'MV Boli';
+    font-size: 160%;
+}
+.billout #name
+{
+    color: white;
+    font-family: 'Garamond';
+    font-size: 130%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.billout #submit
+{
+    background-color:  rgba(222, 184, 135, 0.7750);
+    font-family: 'Garamond';
+    font-size: 200%;
+    margin-top: 5%;
+    color:white;
+}
+.billout #submit:hover
+{
+    color:black;
+}
+.main-nav
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav li
+{
+    display:inline-block;
+    font-family: 'cursive';
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 8px 30px;
+    font-family: 'MV Boli';
+    font-size: 20px;
+}
+
+.main-nav li.active a
+{
+    color:yellow;
+}
+
+.main-nav li a:hover
+{
+    color:red;
+}
+

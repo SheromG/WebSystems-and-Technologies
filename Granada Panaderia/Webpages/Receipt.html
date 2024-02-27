@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <link href="../index.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../Media/Granada.svg">
+    <style>
+        .page
+        {
+            font-size: 50px;
+            padding:1px;
+            text-align:center;
+            color:tan;
+            font-family:"Courier New" ;
+            margin-bottom: -5%;
+        }
+        .reciept
+        {
+            border-radius: 30px;
+            border: 2.5px solid #ffffff;
+            margin-left: 12.5%;
+            margin-right: 12.5%;
+            width:70%;
+            height:830px;
+            background:tan;
+        }
+        .reciept h1
+        {
+            font-size: 400%;
+            margin-top: 10px;
+            margin-bottom: -5px;
+            color:white;
+            font-family:"Courier New" ;
+        }
+        .picture
+        {
+            width: 100%;
+        }
+        .number
+        {
+            font-family:"Courier New" ;
+            font-size: 150%;
+            background-color: transparent;
+            color:white;
+            border: none;
+            width: 12%;
+            text-align: right; 
+            margin-left: -30px;       
+        }
+        .text
+        {
+            font-size: 250%;
+            color:white;
+            font-family:"Courier New";
+            margin-left: 35px;
+        }
+        .info
+        {
+            margin-top: -30px;
+            color:#ffffff;
+            font-size: 150%;
+            font-family:"Courier New" ;
+            font-weight: bold;
+        }
+        .info p
+        {
+            font-size: 200%;
+            margin: -2px;
+        }
+
+        #submit
+        {
+            font-family:"Courier New" ;
+            color: white;
+            background-color: transparent;
+            font-size: 150%;
+            border: 2px solid #ffffff;
+            margin-top: 50px;
+        }
+        #submit:hover
+        {
+            background-color: white;
+            color:black;
+        }
+        #submit:active 
+        {
+            transform: translateY(4px);
+        }
+        .blank
+        {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href = "../index.html"><img class = "logo" src = "../Media/Granada.svg"></a>
+    <div class = "page">
+        <h1>RECEIPT</h1>
+    </div>
+    <div class = "reciept">
+        <center><h1>Order Receipt:</h1></center>
+            <h3 class = "text">&nbsp;The total items to be delivered is<input class = "number" id="items">.
+                Please prepare &#8369 <input class = "number" id="total">.00</input>
+                for COD Payment. <br><br>Online Payment is through Gcash only. <br>
+                &nbsp;&nbsp;&nbsp;Account Number: 09123456789<br>
+                &nbsp;&nbsp;&nbsp;Account Name: Granada Panderia
+                <br><br>
+                Your contact information has been receive by our rider.Kindly wait short as we deliver your order.
+                <br><br>
+                Thank you and please order again.
+            </input></h3>   
+
+
+    <center>
+        <table class = "info" width = "80%">
+            <tr>
+                <form action = "../index.html">
+                    <td colspan = "15"><center><input type="submit" id = "submit" value="Home" name = "submit"></center></td>
+                </form>
+            </tr>
+        </table>
+    </center>
+    </div>
+
+    <script>
+        (function (variable) 
+        {document.getElementById("items").value = variable.localStorage.getItem("items_final");
+         document.getElementById("total").value = variable.localStorage.getItem("total_final");
+        }(window));  
+    </script>
+</body>
+</html>

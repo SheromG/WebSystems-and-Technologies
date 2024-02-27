@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+:root
+{
+    --color1: #db0001;
+    --color2: #007bff;
+    --color3: #28a745;
+    --color4: #c82333;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+    background-color: black;
+    color: white;
+}
+
+.header 
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Media/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo 
+{
+    width: 10em;
+    cursor: pointer;
+}
+.header div h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.titlebutton 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+button 
+{
+    background-color: var(--color4);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 20px;
+    height: 2.5em;
+}
+.add , .modify
+{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    
+    cursor: pointer;
+}
+.add
+{
+    background-color: var(--color2);
+}
+.modify
+{
+    background-color: var(--color3);
+}
+
+.list
+{
+    padding: 2% 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list #movie
+{
+    border-radius: 4px;
+    height: 15rem;
+    width: 22em;
+    border: 2px solid white;
+    margin: 1.5% 1%;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.moviedetails
+{
+    padding: 1rem;
+    display: flex;
+    align-items: end;
+}
+
+.moviename
+{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.moviedescription
+{
+    font-size: 0.85rem;
+    text-align: justify;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .logo 
+    {
+        width: 100px;
+    }
+
+    nav button 
+    {
+        padding: 5px 10px;
+    }
+
+    nav .language 
+    {
+        padding: 4px 8px;
+    }
+
+}

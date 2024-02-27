@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada Product Page</title>
+    <link href="Products.css" rel="stylesheet" type="text/css">
+
+    <script>
+        var price = 0, number = 0;
+        function buttonClick(order) 
+        {
+            if( order == 1){price += 799 }
+            else if(order == 2){price += 899;}
+            document.getElementById('amount').value = price;
+        }
+    </script>
+</head>
+<body>
+    <div class="row">
+        <ul class="main-nav">
+        <li><a href="../index.html">HOME</a></li>
+        <li  class=active><a href="Products.html">PRODUCTS</a></li>
+        <li><a href="Promo.html">PROMOS</a></li>  
+        <li><a href="About.html">ABOUT</a></li>   
+        </ul>
+    </div>
+
+    <center>
+    <div class = "rectangle"><h2>Total Amount: &nbsp&nbsp &#8369 </h2>
+        <input id="amount" class ="price" type="text" value=""></input>
+        <a href="CheckOut.html"> <button id ="checkout" class = "check">Check out</button></a>
+    </div>
+    </center>
+    <script>
+        (function (pass_var) 
+        {
+            document.getElementById("checkout").addEventListener("click",
+            function () {pass_var.localStorage.setItem("amount_total", document.getElementById("amount").value);}, false);
+        }(window));
+    </script>
+
+    <table class = "table">
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/1 cheese.png"></td>
+            <td colspan= "6"><h3>Cheese<br>18-inch Oozing with Pure Mozzarella Cheese<br>₱ 799.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(1);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/2 all meat.png"></td>
+            <td colspan= "6"><h3>All meat <br>18-inch ALL-MEAT pizza packed with beef, salami, pepperoni, ham and Italian sausage topped with a tangy ranch dressing and made with 100% Mozzarella Cheese!<br>₱ 899.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(2);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/3 pepperoni.png"></td>
+            <td colspan= "6"><h3>Pepperoni<br>18-inch pizza fully loaded with sumptuous Pepperoni, made with 100% Mozzarella Cheese!<br>₱ 799.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(1);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/4 bacon glazed.png"></td>
+            <td colspan= "6"><h3>Glazed Bacon<br>18-inch savory pizza topped with sweet, crisp bacon and parsley<br>₱ 899.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(2);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/5 hawaiian.png"></td>
+            <td colspan= "6"><h3>Hawaiian<br>18-inch pizza topped with ham and pineapples, made with 100% Mozzarella Cheese!<br>₱ 799.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(1);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/6 beef n onion.png"></td>
+            <td colspan= "6"><h3>Beef and Onion<br>18-inch classic pizza oozing with Pure Mozzarella Cheese<br> topped with premium ground beef and fresh white onion slices.<br>₱ 799.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(1);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/7 special.png"></td>
+            <td colspan= "6"><h3>Granada's Special<br>18-inch pizza loaded with beef, Italian sausage, pepperoni, salami, mushrooms,<br> green bell pepper, onions and made with 100% Mozzarella Cheese!<br>₱ 899.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(2);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/8 pizza bianca.png"></td>
+            <td colspan= "6"><h3>Pizza Bianca<br>18-inch white sauce pizza topped with smoked bacon, flavorful ham,<br> button mushrooms and cheddar cheese. <br>₱ 899.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(2);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "2"> <img class="product" src="../Media/9 louisiana shrimp.png"></td>
+            <td colspan= "6"><h3>Lousiana Shrimp<br>18-inch pizza topped with succulent Cajun-marinated shrimp<br> with special herb-garlic sauce<br>₱ 799.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(1);">+</button></center></td>
+        </tr>
+
+        <tr>
+            <td colspan = "10"> <img class="product" src="../Media/10.png"></td>
+            
+        </tr>
+    </table>
+</body>
+</html>

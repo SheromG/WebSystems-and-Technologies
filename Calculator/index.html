@@ -1,0 +1,87 @@
+<!--David Sherom Granada-->
+
+<!DOCTYPE html>  
+<html>  
+<head>
+    <title>Granada Calculator </title>  
+    <script src = "function.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>  
+
+<body>  
+
+    <h1>Neon Calculator</h1>
+    <table class = "tab"> 
+        <td style = "width:73% ">
+            <h2>College Algebra</h2>
+            <p>This course includes linear, quadratic, polynomial, rational, exponential, inverse functions and their graphs, linear 
+            inequalities, and linear systems of equations.<br>The objective of the subject is for the student to demonstrate increased 
+            ability in problem-solving and logical thinking. <br><br>
+            </p>
+            <table style = "width:100% ">
+                <tr> <!--    Images from https://mathonweb.com/help_ebook/html/functions_4.htm   -->
+                    <td><a href = "https://mathonweb.com/help_ebook/html/graphs_2.htm"><img class = "data" src = "https://drive.google.com/uc?export=view&id=1jCBTiySNKe3g2KGGv9HtFZzjaJNWhMTX" alt = "Linear Graph"></td></a>
+                    <td><a href = "https://mathonweb.com/help_ebook/html/quadratic_5.htm"><img class = "data" src = "https://drive.google.com/uc?export=view&id=1s03VicExaN8Xa8dJKbcVcjaaCPGey1oo" alt = "Quadratic Graph"></td></a>
+                    <td><a href = "https://mathonweb.com/help_ebook/html/poly_0.htm"><img class = "data" src = "https://drive.google.com/uc?export=view&id=1zO_z3zm2c6hHwMhCUcAhY4Me3gCtVs2w" alt = "Polynomial Graph"></td></a>
+                    <td><a href = "https://mathonweb.com/help_ebook/html/expoapps.htm"><img class = "data" src = "https://drive.google.com/uc?export=view&id=1X19zm4k-9Maa33teyoK22wTtJM3sdfWt" alt = "Exponential Graph"></td></a>
+                </tr>
+                <tr style = "text-align: center;">
+                    <td>Linear Functions</td>
+                    <td>Quadratic Functions</td>
+                    <td>Polynomial Functions</td>
+                    <td>Exponential Functions</td>
+                </tr>
+            </table>
+            <br><br>
+            <p>Submitted by: David Sherom Granada</p>
+            <p>Subject: ITEC 50 - Web Systems and Technologies</p>
+        </td>
+        
+        <td >
+            <div class = "calcborder">
+                <div class= "calculator">  
+                    <form name = "form1">  
+                        <input class= "textview" name = "textview">  
+                    </form>  
+                    <center>  
+                        <table>  
+                        <tr>   
+                            <td> <input class = "btn" type = "button" value = "C" onclick = "form1.textview.value = ' ' " > </td>  
+                            <td> <input  class = "btn" type = "button" value = "B" onclick = "backspace()" > </td>  
+                            <td> <input  class = "btn" type = "button" value = "/" onclick = "insert('/')" > </td>  
+                            <td> <input class = "btn" type = "button" value = "x" onclick = "insert('*')" > </td>  
+                            </tr>  
+                            
+                            <tr>   
+                            <td> <input class = "btn" type = "button" value = "7" onclick = "insert(7)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "8" onclick = "insert(8)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "9" onclick = "insert(9)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "-" onclick = "insert('-')" > </td>  
+                            </tr>  
+                            
+                            <tr>   
+                            <td> <input class = "btn" type = "button" value = "4" onclick = "insert(4)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "5" onclick = "insert(5)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "6" onclick = "insert(6)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "+" onclick = "insert('+')" > </td>  
+                            </tr>  
+                            
+                            <tr>   
+                            <td> <input class = "btn" type = "button" value = "1" onclick = "insert(1)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "2" onclick = "insert(2)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "3" onclick = "insert(3)" > </td>  
+                            <td rowspan = 5> <input class = "btn" style = "height: 150px" type = "button" value = "=" onclick = "equal()"> </td>  
+                            </tr>  
+                            
+                            <tr>  
+                            <td colspan = 2> <input class = "btn" style = "width: 150px" type = "button" value = "0" onclick = "insert(0)" > </td>  
+                            <td> <input class = "btn" type = "button" value = "." onclick = "insert('.')"> </td>  
+                            </tr>  
+                            </table>  
+                        </center>  
+                </div>  
+            </div>
+        </td>
+    </table> 
+</body>  
+</html>

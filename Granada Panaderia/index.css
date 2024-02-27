@@ -1,0 +1,91 @@
+body
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(Media/bg.jpg);
+    background-size:cover;
+    background-position: center; 
+    height:10;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.main-nav
+{ 
+    float: right;
+    font-family:"Lucida Console" ;
+}
+
+.main-nav li
+{
+    display:inline-block;
+    margin-top: 10px;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 20px;
+}
+
+.main-nav li.active a
+{
+    color: khaki;
+}
+
+.main-nav li a:hover
+{
+    color:yellow;
+}
+.logo
+{
+    float:left;
+    margin-left: 17.5px;
+    width:10%;
+}
+.picscontainer
+{
+    margin-top: 60px;
+}
+.pics
+{
+    display:none;
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+    position: fixed;
+    opacity: 85%;
+}
+.button_left
+{
+    background-color: transparent;
+    color: black;
+    border:none;
+    height:inherit;
+    width:60px;
+    font-size: 50px;
+    margin-left: 205px;
+    position: fixed;
+}
+.button_left:hover 
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button_right
+{
+    background-color: transparent;
+    color: black;
+    border:none;
+    height:480px;
+    width:60px;
+    font-size: 50px;
+    margin-left: 1101px;
+    position: fixed;
+}
+.button_right:hover 
+{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}

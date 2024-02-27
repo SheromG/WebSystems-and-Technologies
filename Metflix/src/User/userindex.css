@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap");
+
+:root
+{
+    --color1: #db0001;
+    --color2: #333;
+    --color3: #777;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+    background-color: black;
+    color: white;
+}
+
+.header 
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../Media/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+.header .indexpage
+{
+    position: absolute;
+    width: 40em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header .indexpage h1
+{
+    text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
+}
+.header .indexpage div
+{
+    display: flex;
+    justify-content: center;
+}
+
+.header .indexpage div div
+{
+    padding: 1em;
+    flex-direction: column;
+}
+
+.profile img
+{
+    width: 12.5em;
+    border-radius: 4px;
+}
+
+.profile div
+{
+    margin-top: -10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color3)
+}
+.profile:hover img
+{
+    border:4px solid white;
+    
+}
+.profile:hover div
+{
+    color:white;
+}
+
+.header .indexpage button
+{
+    background-color: transparent;
+    border: 2px solid var(--color3);
+    height: 3em;
+    width: 40%;
+    margin: 0 30%;
+    color: var(--color3);
+    border-radius: 4px;
+    font-size: 1.2em;
+    
+}
+a .profile div
+{
+    text-decoration: none;
+}
+a 
+{
+    text-decoration: none;
+}
+
+.header .indexpage button:hover
+{
+    border-color: white;
+    color: white
+}
+.footer 
+{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: var(--color3);
+}
+
+.copyright-text {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) 
+{
+
+    .header .indexpage
+    {
+        width: 95%;
+    }
+    
+    .header .indexpage h1
+    {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .header .indexpage div
+    {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .header .indexpage div div
+    {
+        padding: 0.5em;
+    }
+    
+    .profile img
+    {
+        width: 45%;
+        margin-left: 27.5%;
+    }
+    
+    .profile div
+    {
+        margin-top: -5px;
+    }
+    .header .indexpage button
+    {
+        width: 60%;
+        margin: 0 20%;
+    }
+}

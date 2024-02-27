@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="../index.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../Media/Granada.svg">
+    <style>
+        .page
+        {
+            font-size: 50px;
+            padding:1px;
+            text-align:center;
+            color:tan;
+            font-family:"Courier New" ;
+            margin-bottom: -5%;
+        }
+        .paper
+        {
+            border-radius: 30px;
+            border: 2.5px solid #ffffff;
+            margin-left: 15%;
+            margin-right: 15%;
+            width:70%;
+            height:450px;
+            background:tan;
+        }
+        .info
+        {
+            margin-top: -30px;
+            color:#ffffff;
+            font-size: 150%;
+            font-family:"Courier New" ;
+            font-weight: bold;
+        }
+        .info p
+        {
+            font-size: 170%;
+            margin: -2px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        #textarea
+        {
+            width: 75%;
+            background-color: transparent;
+            color:white;
+            font-size: 130%;
+            border-radius: 20px;
+            border: 2px solid white;
+            outline-color: white;
+            resize: none;
+        }
+        #submit
+        {
+            font-family:"Courier New" ;
+            color: white;
+            background-color: transparent;
+            font-size: 150%;
+            border: 2px solid #ffffff;
+        }
+        #submit:hover
+        {
+            background-color: white;
+            color:black;
+        }
+        #submit:active 
+        {
+            transform: translateY(4px);
+        }
+        form 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .radio
+        {
+            position: absolute;
+            opacity: 0;
+        }
+		.radio:checked + span 
+        {
+            font-size: 115%;
+        }
+		.radio:checked + span:before 
+        {
+			box-shadow: inset 0 0 0 0.45em white;
+		}
+        span
+        {
+            display: flex;
+            align-items: center;
+            padding: 0.25em;
+            border-radius: 99em; 
+            transition: 0.25s ease;
+        }
+		span:hover 
+        {
+            font-size: 115%;
+			background-color: rgba(255, 255, 255, 0.226);
+		}
+		span:before 
+        {
+			display: flex;
+			content: "";
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 50%;
+			margin-right: 0.375em;
+			transition: 0.25s ease;
+			box-shadow: inset 0 0 0 0.1em white;
+		}
+    </style>
+</head>
+<body>
+    <a href = "../index.html"><img class = "logo" src = "../Media/Granada.svg"></a>
+    <div class="row">
+        <ul class="main-nav">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>  
+            <li><a href="Delivery.html">DELIVERY</a></li>  
+            <li class=active><a href="Feedback.html">FEEDBACK</a></li>
+            <li><a href="About.html">ABOUT</a></li>   
+        </ul>
+    </div>
+
+    <div class = "page">
+        <h1>FEEDBACK</h1>
+    </div>
+    <div class = "paper">
+        <center>
+            <table class = "info" width = "90%">
+                <tr>
+                    <th colspan = "15"><p>How would you rate our product:</p></th>
+                </tr>
+                <tr>
+                    <td colspan="15">
+                        <form method="POST" name="email" action="Feedback.php">
+                            <label><input class = "radio" type="radio" name ="rate" value = "Very Good"><span>Very Good</span></label>  
+                            <label><input class = "radio" type="radio" name ="rate" value = "Good"><span>Good</span></label>
+                            <label><input class = "radio" type="radio" name ="rate" value = "Neutral"><span>Neutral</span></label>
+                            <label><input class = "radio" type="radio" name ="rate" value = "Bad"><span>Bad</span></label>
+                            <label><input class = "radio" type="radio" name ="rate" value = "Very Bad"><span>Very Bad</span></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan = "15"><p style = "font-size:150%; margin-left:95px;margin-top: 10px;margin-bottom: -0px;">Feedback:</p> </td>
+                </tr>
+                <tr>
+                    <td colspan = "15"><center><textarea id="textarea"  rows="6" name = "feedback"></textarea></center></td>
+                </tr>
+                <tr>
+                    <td colspan = "15"><center><input type="submit" id = "submit" value="Submit" name = "submit"></center></td>
+                    </form>
+                </tr>
+        </table>
+        </center>
+    </div> 
+</body>
+</html>

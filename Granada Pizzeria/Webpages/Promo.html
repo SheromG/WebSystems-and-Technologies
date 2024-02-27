@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada Promo Page</title>
+    <link href="Promo.css" rel="stylesheet" type="text/css">
+
+    <script>
+        var price = 0, number = 0;
+        function buttonClick(order) 
+        {
+            if( order == 1){price += 2299 }
+            else if(order == 2){price += 3749;}
+            else if(order == 3){price += 6999;}
+            document.getElementById('amount').value = price;
+        }
+    </script>
+</head>
+<body>
+    <div class="row">
+        <ul class="main-nav">
+        <li><a href="../index.html">HOME</a></li>
+        <li  ><a href="Products.html">PRODUCTS</a></li>
+        <li class=active><a href="Promo.html">PROMOS</a></li>  
+        <li><a href="About.html">ABOUT</a></li>   
+        </ul>
+    </div>
+
+    <center>
+    <div class = "rectangle"><h2>Total Amount: &nbsp&nbsp &#8369 </h2>
+        <input id="amount" class ="price" type="text" value=""></input>
+        <a href="CheckOut.html"> <button id ="checkout" class = "check">Check out</button></a>
+    </div>
+    </center>
+    <script>
+        (function (pass_var) 
+        {
+            document.getElementById("checkout").addEventListener("click",
+            function () {pass_var.localStorage.setItem("amount_total", document.getElementById("amount").value);}, false);
+        }(window));
+    </script>
+
+    <table class = "table">
+        <tr>
+            <td colspan = "3"> <img class="product" src="../Media/11 package1.png"></td>
+            <td colspan= "5"><h3>Small Family Package<br> 3 x 18-inch inches pizza it includes Hawaiian, Pepperoni,<br> and All-meat!<br>For only ₱ 2299.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(1);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "3"> <img class="product" src="../Media/12 package2.png"></td>
+            <td colspan= "5"><h3>Big Family Package <br>6 x 18-inch inches pizza it includes Hawaiian, Pepperoni,<br> All-meat, Beef and Onion, Lousiana Shrimp, and Cheese!!<br>For only ₱ 3749.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(2);">+</button></center></td>
+        </tr>
+        <tr>
+            <td colspan = "3"> <img class="product" src="../Media/13 package3.png"></td>
+            <td colspan= "5"><h3>Buy All Package<br>9 x 18-inch inches El Granada Pizza<br> This packages includes all the flavor!!!<br>For only ₱ 6990.00</h3></td>
+            <td colspan= "2"><center><button class = "button" onclick="buttonClick(3);">+</button></center></td>
+        </tr>
+       
+        <tr>
+            <td colspan = "10"> <img class="product" src="../Media/10.png"></td>
+            
+        </tr>
+    </table>
+ 
+</body>
+</html>

@@ -1,0 +1,116 @@
+body
+{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(../Media/bg.jpg);  
+    background-position: center;  
+    background-size:cover; 
+    height:100vmin;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.table
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+td 
+{
+    background-color: rgba(65, 62, 62, 0.45);
+}
+.table h3
+{
+    font-size: 175%;
+    font-family: 'Ink free';
+    color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: -2px;
+    text-align: center;
+}
+
+.product
+{
+    width: 400px;
+}
+.button
+{
+    font-size: 50px;
+    background-color:burlywood
+    
+}
+
+.rectangle
+{
+    left: 30%;
+    right: 30%;
+    width:40%;
+    top: 90%;
+    height:10%;
+    background-color: rgba(222, 184, 135, 0.75);
+    position: fixed;
+}
+.rectangle h2
+{
+    float:left;
+    color: white;
+    font-family: 'Ink free';
+    padding-left: 2%;
+}
+.price
+{
+    text-align: center;
+    font-size: 35px;
+    background-color: transparent;
+    color:white;
+    border: none;
+    font-family: 'Ink free';
+    width: 30%;
+    margin-top: 2%;
+    margin-left: -5%;
+}
+.check
+{
+    font-family: 'Ink free';
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    float: right;
+    margin-top: 4%;
+    margin-right: 2%;
+    width: 25%;
+}
+.check:hover
+{
+    color: black;
+}
+.main-nav
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav li
+{
+    display:inline-block;
+    font-family: 'cursive';
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 8px 30px;
+    font-family: 'MV Boli';
+    font-size: 20px;
+}
+
+.main-nav li.active a
+{
+    color:yellow;
+}
+
+.main-nav li a:hover
+{
+    color:red;
+}

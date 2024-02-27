@@ -1,0 +1,38 @@
+[
+    {
+        "Number": "1",
+        "Name": "Black Clover: Sword of the Wizard King",
+        "Description": "In a world where magic is everything, Asta, a boy who was born with no magic, aims to become the Wizard King.",
+        "ImagePath": "../Media/Thumbnails/1.jpg"
+    }, 
+    {
+        "Number": "2",
+        "Name": "Ghosted",
+        "Description": "Cole falls head over heels for enigmatic Sadie, but then makes the shocking discovery that she's a secret agent.",
+        "ImagePath": "../Media/Thumbnails/2.png"
+    },
+    {
+        "Number": "3",
+        "Name": "The Boogeyman",
+        "Description": "After their mother's tragic death, a teenage girl and her younger sister face a sadistic presence in their home.",
+        "ImagePath": "../Media/Thumbnails/3.png"
+    },
+    {
+        "Number": "4",
+        "Name": "Transformers: Rise of the Beasts",
+        "Description": "During the '90s, a new faction of Transformers - the Maximals - join the Autobots as allies in the battle for Earth.",
+        "ImagePath": "../Media/Thumbnails/4.png"
+    },
+    {
+        "Number": "5",
+        "Name": "Extraction 2",
+        "Description": "Back from the brink of death, highly skilled commando Tyler Rake takes on another dangerous mission.",
+        "ImagePath": "../Media/Thumbnails/5.jpg"
+    },
+    {
+        "Number": "6",
+        "Name": "Spider-Man: Across the Spider-Verse",
+        "Description": "Miles Morales joins Spider-People across dimensions to protect the Multiverse and its existence.",
+        "ImagePath": "../Media/Thumbnails/6.jpg"
+    }
+]

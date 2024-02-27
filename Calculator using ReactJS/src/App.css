@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App-body
+{   
+    background: #00132d;
+    color: white;  
+    font-family:"Courier New";
+}
+.calculator 
+{  
+    width: 300px;  
+    height: 450px;  
+    margin: 10px auto; 
+    padding: 20px;  
+    text-align: center;
+    border-radius: 25px;
+    background-color: #00132d;
+}  
+.calcborder 
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 350px;
+    position: relative;
+    border-radius: 25px;
+    background:  linear-gradient(315DEG,#ff00f2 0%, #00b7ff 95%);  
+    padding:  1px;
+}  
+h1 
+{  
+    text-align: center;  
+    padding: 15px;  
+    background:  linear-gradient(315DEG,#ff00f2 0%, #00b7ff 85%); 
+    color: white;  
+    font-size:300%;
+    font-family:"Lucida Console" ;
+}   
+input:hover  
+{  
+    background-color: white;  
+    color:black;
+}   
+
+*{  
+margin: 0;  
+padding: 0;  
+}  
+.btn
+{  
+    width: 70px;  
+    height: 70px;  
+    font-size: 25px;  
+    margin: 2px;  
+    cursor: pointer;  
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;  
+}  
+.textview
+{  
+    width: 283px;
+    height: 50px;  
+    margin: 5px;  
+    font-size: 30px;  
+    color: white;
+    padding: 5px;  
+    background-color: #00132d;
+    border: 2px solid white;
+}    
+.tab
+{ 
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://drive.google.com/uc?export=view&id=1Ka9QBlQyj15Rsqhplu23Eu8UkhbuhQTt);
+    background-size: 120%;
+}
+.data
+{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2
+{
+    font-size: 400%;   
+}
+p
+{
+    font-size: 150%;  
+}

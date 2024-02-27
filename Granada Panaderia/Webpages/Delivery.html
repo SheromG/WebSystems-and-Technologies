@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <link href="../index.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../Media/Granada.svg">
+    <style>
+        .page
+        {
+            font-size: 50px;
+            padding:1px;
+            text-align:center;
+            color:tan;
+            font-family:"Courier New" ;
+            margin-bottom: -5%;
+        }
+        .reciept
+        {
+            border-radius: 30px;
+            border: 2.5px solid #ffffff;
+            margin-left: 5%;
+            margin-right: 5%;
+            width:90%;
+            height:1150px;
+            background:tan;
+        }
+        .reciept h1
+        {
+            font-size: 400%;
+            margin-top: 10px;
+            margin-bottom: -5px;
+            color:white;
+            font-family:"Courier New" ;
+        }
+        .reciept h2
+        {
+            font-size: 170%;
+            color:white;
+            font-family:"Courier New" ;
+            float: left;
+        }
+        .picture
+        {
+            width: 100%;
+        }
+        .number
+        {
+            font-family:"serif" ;
+            text-align:left;
+            font-size: 200%;
+            background-color: transparent;
+            color:white;
+            border: none;
+            width: 15%;
+            margin-top: 15px;
+        }
+        .table
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .number2
+        {
+            font-family:"serif" ;
+            font-size: 250%;
+            background-color: transparent;
+            color:white;
+            border: none;
+            width: 15%;
+            text-align: right;
+        }
+        .number2total
+        {
+            font-family:"serif" ;
+            font-size: 400%;
+            background-color: transparent;
+            color:white;
+            border: none;
+            width: 15%;
+            text-align: right;
+        }
+        .text
+        {
+            font-size: 250%;
+            color:white;
+            font-family:"Courier New";
+        }
+        .texttotal
+        {
+            font-size: 300%;
+            color:white;
+            font-family:"Courier New";
+        }
+        .floater
+        {
+            text-align: right;
+            margin-right: 40px;
+        }
+        .child
+        {   
+            display: inline-block;
+            vertical-align:middle;
+            margin-top: -60px;
+            margin-left: -400px;
+        }
+        .child1
+        {   
+            display: inline-block;
+            vertical-align:right;
+            margin-top: -60px;
+            margin-right: -250px;
+        }
+        .child2
+        {   
+            display: inline-block;
+            vertical-align:middle;
+            margin-top: -30px;
+            margin-left: -400px;
+        }
+        .info
+        {
+            margin-top: -30px;
+            color:#ffffff;
+            font-size: 150%;
+            font-family:"Courier New" ;
+            font-weight: bold;
+        }
+        .info p
+        {
+            font-size: 200%;
+            margin: -2px;
+        }
+        #text
+        {
+            width: 100%;
+            background-color: transparent;
+            color:white;
+            font-size: 130%;
+            border: none;
+            border-bottom: 2px solid white;
+        }
+        #textarea
+        {
+            width: 100%;
+            background-color: transparent;
+            color:white;
+            font-size: 130%;
+            border: none;
+            border-bottom: 2px solid white;
+            resize: none;
+        }
+        #submit
+        {
+            font-family:"Courier New" ;
+            color: white;
+            background-color: transparent;
+            font-size: 150%;
+            border: 2px solid #ffffff;
+            margin-top: 50px;
+        }
+        #submit:hover
+        {
+            background-color: white;
+            color:black;
+        }
+        #submit:active 
+        {
+            transform: translateY(4px);
+        }
+    </style>
+
+</head>
+<body>
+    <a href = "../index.html"><img class = "logo" src = "../Media/Granada.svg"></a>
+    <div class="row">
+        <ul class="main-nav">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="Products.html">PRODUCTS</a></li>  
+            <li class=active><a href="Delivery.html">DELIVERY</a></li>  
+            <li><a href="Feedback.html">FEEDBACK</a></li>
+            <li><a href="About.html">ABOUT</a></li>   
+        </ul>
+    </div>
+    <div class = "page">
+        <h1>DELIVERY</h1>
+    </div>
+    <div class = "reciept">
+        <center><h1>Your Order Summary:</h1></center>
+
+        <table>
+            <tr>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/1 Pandesal.png"></td>
+                <td colspan = "3">
+                    <h2>Pandesal&nbsp;x</h2>
+                    <input class = "number" id="count1"></input>
+                </td>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/2 Caramel Bar.png"></td>
+                <td colspan = "3">
+                    <h2>Caramel Bar&nbsp;x</h2>
+                    <input class = "number" id="count2"></input>
+                </td>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/3 Mango Bar.png"></td>
+                <td colspan = "3">
+                    <h2>Mango Bar&nbsp;x</h2>
+                    <input class = "number" id="count3"></input>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/4 Brownies.png"></td>
+                <td colspan = "3">
+                    <h2>Brownies&nbsp;x</h2>
+                    <input class = "number" id="count4"></input>
+                </td>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/5 Butter Mamon.png"></td>
+                <td colspan = "3">
+                    <h2>Butter Mamon&nbsp;x</h2>
+                    <input class = "number" id="count5"></input>
+                </td>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/6 Mocha Mamon.png"></td>
+                <td colspan = "3">
+                    <h2>Mocha Mamon&nbsp;x</h2>
+                    <input class = "number" id="count6"></input>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/7 Cheesy Mamon.png"></td>
+                <td colspan = "3">
+                    <h2>Cheesy Mamon&nbsp;x</h2>
+                    <input class = "number" id="count7"></input>
+                </td>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/8 Ube Mamon.png"></td>
+                <td colspan = "3">
+                    <h2>Ube Mamon&nbsp;x</h2>
+                    <input class = "number" id="count8"></input>
+                </td>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/9 Taisan Slice.png"></td>
+                <td colspan = "3">
+                    <h2>Taisan Slice&nbsp;x</h2>
+                    <input class = "number" id="count9"></input>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2"><img class = "picture" src = "../Media/Products/10 Moist Choco Slice.png"></td>
+                <td colspan = "3">
+                    <h2>Choco Slice&nbsp;x</h2>
+                    <input class = "number" id="count10"></input>
+                </td>
+            </tr>
+        </table>
+
+        <div class = "floater">
+            <div class = "child"><h3 class = "text">Total Items: &nbsp;</h3></div>
+            <div class = "child"><input class = "number2" id="items"></input></div>
+        </div>
+        <div class = "floater">
+            <div class = "child"><h3 class = "text">Subtotal:  &#8369</h3></div>
+            <div class = "child"><input class = "number2" id="price"></input></div>
+        </div>
+        <div class = "floater">
+            <div class = "child"><h3 class = "text">Shipping Fee:  &#8369</h3></div>
+            <div class = "child"><input class = "number2" id="fee"></input></div>
+        </div>
+        <div class = "floater">
+            <div class = "child1"><h3 class = "texttotal">Total:  &#8369</h3></div>
+            <div class = "child2"><input class = "number2total" id="total"></input></div>
+        </div>
+
+        <center>
+        <form>
+        <table class = "info" width = "80%">
+            <tr>
+                <th colspan = "15"><p>Customer Delivery Information:</p></th>
+            </tr>
+            <tr>
+                <td colspan = "5">Customer's Name: </td>
+                <td colspan = "10"><input type="text" id = "text" name = "name"></td>
+            </tr>
+            <tr>
+                <td colspan = "5">Delivery Address: </td>
+                <td colspan = "10"><textarea id="textarea"  rows="2" name = "adress"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan = "5">Contact Number: </td>
+                <td colspan = "10"><input type="text" id = "text" name = "contact"></td>
+            </tr>
+            <tr>
+                <td colspan = "5">Mode of Payment:</td>
+                <td colspan = "10">
+                    <form action = "Receipt.html">
+                        <input type="radio" id = "payment" name ="payment" value ="Cash on Delivery">
+                        <label for="cod">Cash on Delivery<br></label>
+                        <input type="radio" id = "payment" name ="payment" value ="Online Payment">
+                        <label for="gcash">Online Payment: Gcash</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "15">
+                    <center>
+                        <form action = "Receipt.html">
+                            <input type="submit" id = "submit">
+                        </form>
+                    </center>
+                </td>       
+            </tr>
+        </table>
+        </center>
+    </div>
+    <script>
+        (function (variable) 
+        {   document.getElementById("price").value = variable.localStorage.getItem("price_final");
+            document.getElementById("items").value = variable.localStorage.getItem("items_final");
+            document.getElementById("fee").value = variable.localStorage.getItem("fee_final");
+            document.getElementById("total").value = variable.localStorage.getItem("total_final");
+            document.getElementById("count1").value = variable.localStorage.getItem("count1");
+            document.getElementById("count2").value = variable.localStorage.getItem("count2");
+            document.getElementById("count3").value = variable.localStorage.getItem("count3");
+            document.getElementById("count4").value = variable.localStorage.getItem("count4");
+            document.getElementById("count5").value = variable.localStorage.getItem("count5");
+            document.getElementById("count6").value = variable.localStorage.getItem("count6");
+            document.getElementById("count7").value = variable.localStorage.getItem("count7");
+            document.getElementById("count8").value = variable.localStorage.getItem("count8");
+            document.getElementById("count9").value = variable.localStorage.getItem("count9");
+            document.getElementById("count10").value = variable.localStorage.getItem("count10");
+        }(window));
+        
+        if( document.getElementById("total").value < 1)
+        {
+
+            alert("You don't have items in your cart. Press OK to put items in your cart.");
+            window.location.href='Products.html' ;
+        }
+            
+    </script>
+</body>
+</html>
